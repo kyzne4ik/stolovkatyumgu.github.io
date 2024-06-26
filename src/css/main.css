@@ -1,0 +1,110 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	color: var(--tg-theme-text-color);
+	background-color: var(--tg-theme-bg-color);
+}
+
+.container {
+    display: inline-block;
+    width: 40%;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    font-family: Helvetica;
+    font-weight: bolder;
+    text-align: center;
+}
+button[name="add-button"]{
+	transition: transform 0.2s;
+	background-color: #f8a917;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Helvetica;
+	font-size: 45px;
+	font-weight: bolder;
+	line-height: 20px;	
+	list-style: none;
+	transition: all 200ms;
+	vertical-align: baseline;
+	white-space: nowrap;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	height: 70px;
+	width: 140px;
+	/*width: 62.5px;*/
+	margin: 7px;
+	padding: 10px 12px;
+	border-radius: 11px;
+	/*position: fixed;*/
+	border: 5px solid #f8a917;
+}
+button[name="add-button"]:hover{
+	cursor: pointer;
+}
+button[name="add-button"]:active{
+	background-color: #ed960b;
+	border: 5px solid #ed960b;
+	content:"+";
+	transform: scale(0.9); 
+}
+button[name="add-button"]:checked{
+	font-size: 100px;
+	height: 100px;
+}
+
+button[name="remove-button"]{
+	transition: transform 0.2s;
+	background-color: #e64d44;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Helvetica;
+	font-size: 45px;
+	font-weight: bolder;
+	line-height: 20px;	
+	list-style: none;
+	transition: all 200ms;
+	vertical-align: baseline;
+	white-space: nowrap;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	height: 70px;
+	width: 62.5px;
+	margin: 10px;
+	padding: 10px 12px;
+	border-radius: 11px;
+	border: 5px solid #e64d44;
+}
+button[name="remove-button"]:hover{
+	cursor: pointer;
+}
+button[name="remove-button"]:active{
+	background-color: #d3362d;
+	border: 5px solid #d3362d;
+	transform: scale(0.9); 
+}
+.countProduct{
+	color: #FFFFFF;
+	background-color: #f8a917;
+	display: inline-block;
+	border-radius: 25px;
+	height: 25px;
+	width: 25px;
+	font-size: 11px;
+	font-weight: bolder;
+	margin: 0px;
+	line-height: 25px;
+	margin-left: 45px;
+	margin-bottom: -40px;
+	position: absolute;
+}
+div span{
+	color: white;
+}
+.usercard{
+	text-align: center;
+}
