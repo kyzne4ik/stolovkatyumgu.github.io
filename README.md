@@ -1,1 +1,0 @@
-# stolovkatyumgu.github.io
