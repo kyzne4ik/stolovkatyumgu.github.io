@@ -133,7 +133,7 @@ class Buttons extends React.Component{
 			<div className="container">
 				<div><span className="countProduct">{this.state.countProduct[0]}</span></div>
 				<div>
-					<Beer/>
+					{/*<Beer/>*/}
 				</div>
 				<div><span>Beer</span></div>
 				{this.state.showElement[0] && <button onClick={this.handleButtonClickRemove} className="0" name="remove-button">-</button>}
@@ -148,7 +148,7 @@ class Buttons extends React.Component{
 			<div className="container">
 				<div><span className="countProduct">{this.state.countProduct[1]}</span></div>
 				<div>
-					<Burger/>
+					{/*<Burger/>*/}
 				</div>
 				<div><span>Burger</span></div>
 				{this.state.showElement[1] && <button onClick={this.handleButtonClickRemove} className="1" name="remove-button">-</button>}
@@ -163,7 +163,7 @@ class Buttons extends React.Component{
 			<div className="container">
 				<div><span className="countProduct">{this.state.countProduct[2]}</span></div>
 				<div>
-					<Drink/>
+					{/*<Drink/>*/}
 				</div>
 				<div><span>Coke</span></div>
 				{this.state.showElement[2] && <button onClick={this.handleButtonClickRemove} className="2" name="remove-button">-</button>}
@@ -178,7 +178,7 @@ class Buttons extends React.Component{
 			<div className="container">
 				<div><span className="countProduct">{this.state.countProduct[3]}</span></div>
 				<div>
-					<Soup/>
+					{/*<Soup/>*/}
 				</div>
 				<div><span>Soup</span></div>
 				{this.state.showElement[3] && <button onClick={this.handleButtonClickRemove} className="3" name="remove-button">-</button>}
@@ -193,7 +193,7 @@ class Buttons extends React.Component{
 			<div className="container">
 				<div><span className="countProduct">{this.state.countProduct[4]}</span></div>
 				<div>
-					<HotDog/>
+					{/*<HotDog/>*/}
 				</div>
 				<div><span>Hotdog</span></div>
 				{this.state.showElement[4] && <button onClick={this.handleButtonClickRemove} className="4" name="remove-button">-</button>}
@@ -208,7 +208,7 @@ class Buttons extends React.Component{
 			<div className="container">
 				<div><span className="countProduct">{this.state.countProduct[5]}</span></div>
 				<div>
-					<Pizza/>
+					{/*<Pizza/>*/}
 				</div>
 				<div><span>Pizza</span></div>
 				{this.state.showElement[5] && <button onClick={this.handleButtonClickRemove} className="5" name="remove-button">-</button>}
