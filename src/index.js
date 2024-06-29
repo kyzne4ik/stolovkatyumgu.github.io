@@ -135,7 +135,7 @@ class Buttons extends React.Component{
 				<div>
 					<Beer/>
 				</div>
-				<div><span>Beer</span></div>
+				<div><span className="unselectable">Beer</span></div>
 				{this.state.showElement[0] && <button onClick={this.handleButtonClickRemove} className="0" name="remove-button">-</button>}
 				<button onClick={this.handleButtonClick} className="0" name="add-button" 
 					style={{
@@ -150,7 +150,7 @@ class Buttons extends React.Component{
 				<div>
 					<Burger/>
 				</div>
-				<div><span>Burger</span></div>
+				<div><span className="unselectable">Burger</span></div>
 				{this.state.showElement[1] && <button onClick={this.handleButtonClickRemove} className="1" name="remove-button">-</button>}
 				<button onClick={this.handleButtonClick} className="1" name="add-button"
 					style={{
@@ -165,7 +165,7 @@ class Buttons extends React.Component{
 				<div>
 					<Drink/>
 				</div>
-				<div><span>Coke</span></div>
+				<div><span className="unselectable">Coke</span></div>
 				{this.state.showElement[2] && <button onClick={this.handleButtonClickRemove} className="2" name="remove-button">-</button>}
 				<button onClick={this.handleButtonClick} className="2" name="add-button"
 					style={{
@@ -180,7 +180,7 @@ class Buttons extends React.Component{
 				<div>
 					<Soup/>
 				</div>
-				<div><span>Soup</span></div>
+				<div><span className="unselectable">Soup</span></div>
 				{this.state.showElement[3] && <button onClick={this.handleButtonClickRemove} className="3" name="remove-button">-</button>}
 				<button onClick={this.handleButtonClick} className="3" name="add-button"
 					style={{
@@ -195,7 +195,7 @@ class Buttons extends React.Component{
 				<div>
 					<HotDog/>
 				</div>
-				<div><span>Hotdog</span></div>
+				<div><span className="unselectable">Hotdog</span></div>
 				{this.state.showElement[4] && <button onClick={this.handleButtonClickRemove} className="4" name="remove-button">-</button>}
 				<button onClick={this.handleButtonClick} className="4" name="add-button"
 					style={{
@@ -210,7 +210,7 @@ class Buttons extends React.Component{
 				<div>
 					<Pizza/>
 				</div>
-				<div><span>Pizza</span></div>
+				<div><span className="unselectable">Pizza</span></div>
 				{this.state.showElement[5] && <button onClick={this.handleButtonClickRemove} className="5" name="remove-button">-</button>}
 				<button onClick={this.handleButtonClick} className="5" name="add-button"
 					style={{
