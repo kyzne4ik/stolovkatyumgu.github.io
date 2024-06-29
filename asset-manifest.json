@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/kyzne4ik.github.io/stolovkatyumgu/static/css/main.f855e6bc.css",
-    "main.js": "/kyzne4ik.github.io/stolovkatyumgu/static/js/main.e66d8156.js",
-    "static/js/453.88578ab0.chunk.js": "/kyzne4ik.github.io/stolovkatyumgu/static/js/453.88578ab0.chunk.js",
-    "static/media/logo.svg": "/kyzne4ik.github.io/stolovkatyumgu/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/kyzne4ik.github.io/stolovkatyumgu/index.html",
-    "main.f855e6bc.css.map": "/kyzne4ik.github.io/stolovkatyumgu/static/css/main.f855e6bc.css.map",
-    "main.e66d8156.js.map": "/kyzne4ik.github.io/stolovkatyumgu/static/js/main.e66d8156.js.map",
-    "453.88578ab0.chunk.js.map": "/kyzne4ik.github.io/stolovkatyumgu/static/js/453.88578ab0.chunk.js.map"
+    "main.css": "/stolovkatyumgu.github.io/static/css/main.f855e6bc.css",
+    "main.js": "/stolovkatyumgu.github.io/static/js/main.c9c7296e.js",
+    "static/js/453.88578ab0.chunk.js": "/stolovkatyumgu.github.io/static/js/453.88578ab0.chunk.js",
+    "static/media/logo.svg": "/stolovkatyumgu.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/stolovkatyumgu.github.io/index.html",
+    "main.f855e6bc.css.map": "/stolovkatyumgu.github.io/static/css/main.f855e6bc.css.map",
+    "main.c9c7296e.js.map": "/stolovkatyumgu.github.io/static/js/main.c9c7296e.js.map",
+    "453.88578ab0.chunk.js.map": "/stolovkatyumgu.github.io/static/js/453.88578ab0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.e66d8156.js"
+    "static/js/main.c9c7296e.js"
   ]
 }
