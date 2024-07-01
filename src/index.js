@@ -129,98 +129,194 @@ class Buttons extends React.Component{
 	render(){
 		return (
 			<div>
-			<center>
+			<span className="countProduct">{this.state.countProduct[0]}</span>
+			<div className="image"><Beer/></div>
+			<span style={{
+				margin: "50px"
+			}}>Beer</span>
 			<div className="container">
-				<div><span className="countProduct">{this.state.countProduct[0]}</span></div>
-				<div>
-					<Beer/>
-				</div>
-				<div><span className="unselectable">Beer</span></div>
-				{this.state.showElement[0] && <button onClick={this.handleButtonClickRemove} className="0" name="remove-button">-</button>}
-				<button onClick={this.handleButtonClick} className="0" name="add-button" 
+				{this.state.showElement[0] && 
+				<button 
+					onClick={this.handleButtonClickRemove} 
+					className="0" 
+					name="remove-button"
 					style={{
-						// backgroundColor: this.state.clicked ? '#77FF91' : '#11E625',
-						height: this.state.clicked[0] ? '70px' : '70px',
-						width: this.state.clicked[0] ? '62.5px' : '140px',
-						content: this.state.clicked[0] ? '+' : 'add',
-					}}>{this.state.textButton[0]}</button>
+						height: '70px',
+						width: '62.5px',
+						transform: this.state.clicked[0] ? 'scale(1)' : 'scale(0.5)',
+						transition: 'all 1s',
+					}}
+				>-</button>}
 			</div>
 			<div className="container">
-				<div><span className="countProduct">{this.state.countProduct[1]}</span></div>
-				<div>
-					<Burger/>
-				</div>
-				<div><span className="unselectable">Burger</span></div>
-				{this.state.showElement[1] && <button onClick={this.handleButtonClickRemove} className="1" name="remove-button">-</button>}
-				<button onClick={this.handleButtonClick} className="1" name="add-button"
+				<button 
+					onClick={this.handleButtonClick} 
+					className="0" 
+					name="add-button" 
 					style={{
-						// backgroundColor: this.state.clicked ? '#77FF91' : '#11E625',
-						height: this.state.clicked[1] ? '70px' : '70px',
-						width: this.state.clicked[1] ? '62.5px' : '140px',
-						content: this.state.clicked[1] ? '+' : 'ADD',
-					}}>{this.state.textButton[1]}</button>
+						height: '70px',
+						transformOrigin: 'right top',
+						width: this.state.clicked[0] ? '62.5px' : '130px',
+						marginLeft: this.state.clicked[0] ? '68px' : '0px',
+						//transform: this.state.clicked[0] ? 'translateX(-100%)' : '',
+						zIndex: '5',
+				}}>{this.state.textButton[0]}</button>
+			</div>
+			<span className="countProduct">{this.state.countProduct[1]}</span>
+			<div className="image"><Burger/></div>
+			<span style={{margin: "41px"}}>Burger</span>
+			<div className="container">
+				{this.state.showElement[1] && 
+				<button 
+					onClick={this.handleButtonClickRemove} 
+					className="1" 
+					name="remove-button"
+					style={{
+						height: '70px',
+						width: '62.5px',
+						//transform: this.state.clicked[0] ? 'scale(1)' : 'scale(0.5)',
+						//transition: 'all 1s',
+					}}
+				>-</button>}
 			</div>
 			<div className="container">
-				<div><span className="countProduct">{this.state.countProduct[2]}</span></div>
-				<div>
-					<Drink/>
-				</div>
-				<div><span className="unselectable">Coke</span></div>
-				{this.state.showElement[2] && <button onClick={this.handleButtonClickRemove} className="2" name="remove-button">-</button>}
-				<button onClick={this.handleButtonClick} className="2" name="add-button"
+				<button 
+					onClick={this.handleButtonClick} 
+					className="1" 
+					name="add-button" 
 					style={{
-						// backgroundColor: this.state.clicked ? '#77FF91' : '#11E625',
-						height: this.state.clicked[2] ? '70px' : '70px',
-						width: this.state.clicked[2] ? '62.5px' : '140px',
-						content: this.state.clicked[2] ? '+' : 'ADD',
-					}}>{this.state.textButton[2]}</button>
+						height: '70px',
+						transformOrigin: 'right top',
+						width: this.state.clicked[1] ? '62.5px' : '130px',
+						marginLeft: this.state.clicked[1] ? '68px' : '0px',
+						//transform: this.state.clicked[0] ? 'translateX(-100%)' : '',
+						zIndex: '5',
+				}}>{this.state.textButton[1]}</button>
+			</div>
+			<span className="countProduct">{this.state.countProduct[2]}</span>
+			<div className="image"><Drink/></div>
+			<span style={{margin: "45px"}}>Drink</span>
+			<div className="container">
+				{this.state.showElement[2] && 
+				<button 
+					onClick={this.handleButtonClickRemove} 
+					className="2" 
+					name="remove-button"
+					style={{
+						height: '70px',
+						width: '62.5px',
+						//transform: this.state.clicked[0] ? 'scale(1)' : 'scale(0.5)',
+						//transition: 'all 1s',
+					}}
+				>-</button>}
 			</div>
 			<div className="container">
-				<div><span className="countProduct">{this.state.countProduct[3]}</span></div>
-				<div>
-					<Soup/>
-				</div>
-				<div><span className="unselectable">Soup</span></div>
-				{this.state.showElement[3] && <button onClick={this.handleButtonClickRemove} className="3" name="remove-button">-</button>}
-				<button onClick={this.handleButtonClick} className="3" name="add-button"
+				<button 
+					onClick={this.handleButtonClick} 
+					className="2" 
+					name="add-button" 
 					style={{
-						// backgroundColor: this.state.clicked ? '#77FF91' : '#11E625',
-						height: this.state.clicked[3] ? '70px' : '70px',
-						width: this.state.clicked[3] ? '62.5px' : '140px',
-						content: this.state.clicked[3] ? '+' : 'ADD',
-					}}>{this.state.textButton[3]}</button>
+						height: '70px',
+						transformOrigin: 'right top',
+						width: this.state.clicked[2] ? '62.5px' : '130px',
+						marginLeft: this.state.clicked[2] ? '68px' : '0px',
+						//transform: this.state.clicked[0] ? 'translateX(-100%)' : '',
+						zIndex: '5',
+				}}>{this.state.textButton[2]}</button>
+			</div>
+			<span className="countProduct">{this.state.countProduct[3]}</span>
+			<div className="image"><HotDog/></div>
+			<span style={{margin: "39px"}}>HotDog</span>
+			<div className="container">
+				{this.state.showElement[3] && 
+				<button 
+					onClick={this.handleButtonClickRemove} 
+					className="3" 
+					name="remove-button"
+					style={{
+						height: '70px',
+						width: '62.5px',
+						//transform: this.state.clicked[0] ? 'scale(1)' : 'scale(0.5)',
+						//transition: 'all 1s',
+					}}
+				>-</button>}
 			</div>
 			<div className="container">
-				<div><span className="countProduct">{this.state.countProduct[4]}</span></div>
-				<div>
-					<HotDog/>
-				</div>
-				<div><span className="unselectable">Hotdog</span></div>
-				{this.state.showElement[4] && <button onClick={this.handleButtonClickRemove} className="4" name="remove-button">-</button>}
-				<button onClick={this.handleButtonClick} className="4" name="add-button"
+				<button 
+					onClick={this.handleButtonClick} 
+					className="3" 
+					name="add-button" 
 					style={{
-						// backgroundColor: this.state.clicked ? '#77FF91' : '#11E625',
-						height: this.state.clicked[4] ? '70px' : '70px',
-						width: this.state.clicked[4] ? '62.5px' : '140px',
-						content: this.state.clicked[4] ? '+' : 'ADD',
-					}}>{this.state.textButton[4]}</button>	
+						height: '70px',
+						transformOrigin: 'right top',
+						width: this.state.clicked[3] ? '62.5px' : '130px',
+						marginLeft: this.state.clicked[3] ? '68px' : '0px',
+						//transform: this.state.clicked[0] ? 'translateX(-100%)' : '',
+						zIndex: '5',
+				}}>{this.state.textButton[3]}</button>
+			</div>
+			<span className="countProduct">{this.state.countProduct[4]}</span>
+			<div className="image"><Pizza/></div>
+			<span style={{margin: "48px"}}>Pizza</span>
+			<div className="container">
+				{this.state.showElement[4] && 
+				<button 
+					onClick={this.handleButtonClickRemove} 
+					className="4" 
+					name="remove-button"
+					style={{
+						height: '70px',
+						width: '62.5px',
+						//transform: this.state.clicked[0] ? 'scale(1)' : 'scale(0.5)',
+						//transition: 'all 1s',
+					}}
+				>-</button>}
 			</div>
 			<div className="container">
-				<div><span className="countProduct">{this.state.countProduct[5]}</span></div>
-				<div>
-					<Pizza/>
-				</div>
-				<div><span className="unselectable">Pizza</span></div>
-				{this.state.showElement[5] && <button onClick={this.handleButtonClickRemove} className="5" name="remove-button">-</button>}
-				<button onClick={this.handleButtonClick} className="5" name="add-button"
+				<button 
+					onClick={this.handleButtonClick} 
+					className="4" 
+					name="add-button" 
 					style={{
-						// backgroundColor: this.state.clicked ? '#77FF91' : '#11E625',
-						height: this.state.clicked[5] ? '70px' : '70px',
-						width: this.state.clicked[5] ? '62.5px' : '140px',
-						content: this.state.clicked[5] ? '+' : 'ADD',
-					}}>{this.state.textButton[5]}</button>
+						height: '70px',
+						transformOrigin: 'right top',
+						width: this.state.clicked[4] ? '62.5px' : '130px',
+						marginLeft: this.state.clicked[4] ? '68px' : '0px',
+						//transform: this.state.clicked[0] ? 'translateX(-100%)' : '',
+						zIndex: '5',
+				}}>{this.state.textButton[4]}</button>
 			</div>
-			</center>
+			<span className="countProduct">{this.state.countProduct[5]}</span>
+			<div className="image"><Soup/></div>
+			<span style={{margin: "48px"}}>Soup</span>
+			<div className="container">
+				{this.state.showElement[5] && 
+				<button 
+					onClick={this.handleButtonClickRemove} 
+					className="5" 
+					name="remove-button"
+					style={{
+						height: '70px',
+						width: '62.5px',
+						//transform: this.state.clicked[0] ? 'scale(1)' : 'scale(0.5)',
+						//transition: 'all 1s',
+					}}
+				>-</button>}
+			</div>
+			<div className="container">
+				<button 
+					onClick={this.handleButtonClick} 
+					className="5" 
+					name="add-button" 
+					style={{
+						height: '70px',
+						transformOrigin: 'right top',
+						width: this.state.clicked[5] ? '62.5px' : '130px',
+						marginLeft: this.state.clicked[5] ? '68px' : '0px',
+						//transform: this.state.clicked[0] ? 'translateX(-100%)' : '',
+						zIndex: '5',
+				}}>{this.state.textButton[5]}</button>
+			</div>
 			</div>
 		)
 	}
