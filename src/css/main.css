@@ -3,6 +3,8 @@
 	margin:5px;
 	padding:0;
 	font-weight: bolder;
+	user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 button{
 	cursor: pointer;
@@ -52,7 +54,6 @@ button[name = "remove-button"]:active{
 }
 .countProduct{
 	background-color: #f8a917;
-	color: #FFFFFF;
 	display: inline-block;
 	border-radius: 25px;
 	height: 25px;
@@ -64,4 +65,7 @@ button[name = "remove-button"]:active{
 	margin-left: 125px;
 	text-align: center;
 	margin-top: -50px;
+}
+span{
+	color:white;
 }

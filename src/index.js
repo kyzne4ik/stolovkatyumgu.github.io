@@ -129,6 +129,9 @@ class Buttons extends React.Component{
 	render(){
 		return (
 			<div>
+			<table>
+			<tr>
+			<td>
 			<span className="countProduct">{this.state.countProduct[0]}</span>
 			<div className="image"><Beer/></div>
 			<span style={{
@@ -162,6 +165,8 @@ class Buttons extends React.Component{
 						zIndex: '5',
 				}}>{this.state.textButton[0]}</button>
 			</div>
+			</td>
+			<td>
 			<span className="countProduct">{this.state.countProduct[1]}</span>
 			<div className="image"><Burger/></div>
 			<span style={{margin: "41px"}}>Burger</span>
@@ -174,6 +179,7 @@ class Buttons extends React.Component{
 					style={{
 						height: '70px',
 						width: '62.5px',
+						left: '178px',
 						//transform: this.state.clicked[0] ? 'scale(1)' : 'scale(0.5)',
 						//transition: 'all 1s',
 					}}
@@ -193,6 +199,10 @@ class Buttons extends React.Component{
 						zIndex: '5',
 				}}>{this.state.textButton[1]}</button>
 			</div>
+			</td>
+			</tr>
+			<tr>
+			<td>
 			<span className="countProduct">{this.state.countProduct[2]}</span>
 			<div className="image"><Drink/></div>
 			<span style={{margin: "45px"}}>Drink</span>
@@ -224,6 +234,8 @@ class Buttons extends React.Component{
 						zIndex: '5',
 				}}>{this.state.textButton[2]}</button>
 			</div>
+			</td>
+			<td>
 			<span className="countProduct">{this.state.countProduct[3]}</span>
 			<div className="image"><HotDog/></div>
 			<span style={{margin: "39px"}}>HotDog</span>
@@ -236,6 +248,7 @@ class Buttons extends React.Component{
 					style={{
 						height: '70px',
 						width: '62.5px',
+						left: '178px',
 						//transform: this.state.clicked[0] ? 'scale(1)' : 'scale(0.5)',
 						//transition: 'all 1s',
 					}}
@@ -255,6 +268,10 @@ class Buttons extends React.Component{
 						zIndex: '5',
 				}}>{this.state.textButton[3]}</button>
 			</div>
+			</td>
+			</tr>
+			<tr>
+			<td>
 			<span className="countProduct">{this.state.countProduct[4]}</span>
 			<div className="image"><Pizza/></div>
 			<span style={{margin: "48px"}}>Pizza</span>
@@ -286,6 +303,8 @@ class Buttons extends React.Component{
 						zIndex: '5',
 				}}>{this.state.textButton[4]}</button>
 			</div>
+			</td>
+			<td>
 			<span className="countProduct">{this.state.countProduct[5]}</span>
 			<div className="image"><Soup/></div>
 			<span style={{margin: "48px"}}>Soup</span>
@@ -298,6 +317,7 @@ class Buttons extends React.Component{
 					style={{
 						height: '70px',
 						width: '62.5px',
+						left: '178px',
 						//transform: this.state.clicked[0] ? 'scale(1)' : 'scale(0.5)',
 						//transition: 'all 1s',
 					}}
@@ -317,6 +337,9 @@ class Buttons extends React.Component{
 						zIndex: '5',
 				}}>{this.state.textButton[5]}</button>
 			</div>
+			</td>
+			</tr>
+			</table>
 			</div>
 		)
 	}
