@@ -1,0 +1,31 @@
+*{
+	font-family: Helvetica;
+	margin:5px;
+	padding:0;
+	font-weight: bolder;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+button{
+	font-size: 25px;
+}
+.image{
+	margin:19px;
+}
+.countProduct{
+	background-color: #f8a917;
+	display: inline-block;
+	border-radius: 25px;
+	height: 25px;
+	width: 25px;
+	font-size:14px;
+	font-weight: bolder;
+	margin: 0px;
+	line-height: 25px;
+	margin-left: 125px;
+	text-align: center;
+	margin-top: -50px;
+}
+span{
+	color:white;
+}
