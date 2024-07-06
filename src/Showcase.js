@@ -10,6 +10,7 @@ const getStyleSpan = () => {
 		justifyContent: 'center',
 		alignItems: 'center',
 		marginRight: '14px',
+		color: 'white'
 	}
 }
 
