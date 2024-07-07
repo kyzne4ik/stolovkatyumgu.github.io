@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/stolovkatyumgu.github.io/static/css/main.399e7897.css",
-    "main.js": "/stolovkatyumgu.github.io/static/js/main.32814361.js",
+    "main.js": "/stolovkatyumgu.github.io/static/js/main.838ed40c.js",
     "index.html": "/stolovkatyumgu.github.io/index.html",
     "main.399e7897.css.map": "/stolovkatyumgu.github.io/static/css/main.399e7897.css.map",
-    "main.32814361.js.map": "/stolovkatyumgu.github.io/static/js/main.32814361.js.map"
+    "main.838ed40c.js.map": "/stolovkatyumgu.github.io/static/js/main.838ed40c.js.map"
   },
   "entrypoints": [
     "static/css/main.399e7897.css",
-    "static/js/main.32814361.js"
+    "static/js/main.838ed40c.js"
   ]
 }
