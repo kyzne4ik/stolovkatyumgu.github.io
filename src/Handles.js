@@ -19,17 +19,32 @@ function magicEditor(id,editableElement,tempValue,setFunction){
 	setFunction(updatedElement);
 }
 
-const animationCountProduct = async (index,controls) => {
-    // Запуск анимации увеличения
-    await controls[index].start({
-      scale: 1.5,
-      transition: { duration: 0.3 }
-    });
-    // Запуск анимации уменьшения
-    controls[index].start({
-      scale: 1,
-      transition: { duration: 0.2 }
-    });
+const animationCountProduct = async (index,controls,name) => {
+    if (name==='add-button'){
+        // Запуск анимации уменьшения
+        await controls[index].start({
+          scale: 1.3,
+          transition: { duration: 0.2 }
+        });
+        // Запуск анимации увеличения
+        controls[index].start({
+          scale: 1,
+          transition: { duration: 0.2 }
+        });
+    }
+    else if(name==='remove-button'){
+        // Запуск анимации уменьшения
+        await controls[index].start({
+          scale: 0.7,
+          transition: { duration: 0.2 }
+        });
+        // Запуск анимации увеличения
+        controls[index].start({
+          scale: 1,
+          transition: { duration: 0.2 }
+        });
+    }
+
 };
 const Handles = () => {
 
@@ -47,6 +62,7 @@ const Handles = () => {
 	
     const handleButtonClick = (event) => {
         const id = event.target.className;
+        const name = event.target.name;
         if(basket.get(id) === null){
 	        addProduct(event);
 	        magicEditor(id,countProduct,basket.get(id).countProduct,setCountProduct)
@@ -59,11 +75,12 @@ const Handles = () => {
         magicEditor(id,clicked,true,setClicked)
         magicEditor(id,textButton,'+',setTextButton)
 
-        animationCountProduct(id,controls)
+        animationCountProduct(id,controls,name)
     };
 
     const handleButtonClickRemove = (event) => {
         const id = event.target.className;
+        const name = event.target.name;
         removeProduct(event);
         if (basket.get(id) === null) {
             magicEditor(id,clicked,false,setClicked)
@@ -74,7 +91,7 @@ const Handles = () => {
             magicEditor(id,countProduct,basket.get(id).countProduct,setCountProduct)
         }
 
-        animationCountProduct(id,controls)
+        animationCountProduct(id,controls,name)
     };
     return {
     	handleButtonClick,

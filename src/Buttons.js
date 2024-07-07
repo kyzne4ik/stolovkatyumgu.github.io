@@ -1,9 +1,6 @@
 import { useContext } from "react"
 import { AnimatePresence,motion } from "framer-motion"
 
-import { useAnimation } from "framer-motion"
-import { useRef } from 'react';
-
 import Handles from "./Handles"
 import { MyContext } from './MyContext';
 
@@ -23,7 +20,7 @@ function getStyles(name){
 		fontWeight: 'bolder',
 		userSelect: 'none',
 		WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)',
-		fontSize: '33px',
+		fontSize: '29px',
 	}
 	if(name==='add-button'){
 		return {
@@ -124,7 +121,6 @@ const Buttons = ({index, name}) => {
 		clicked,
 		textButton, 
 		showElement,
-		countProduct,
 	} = useContext(MyContext);
 
 	const {

@@ -1,7 +1,6 @@
 import { Beer, Burger, Drink, HotDog, Pizza, Soup } from "./svg/pageIcon"
 
 import React from 'react';
-
 import {AnimateComponent} from "./AnimateComponent.js"
 
 const getStyleSpan = () => {
