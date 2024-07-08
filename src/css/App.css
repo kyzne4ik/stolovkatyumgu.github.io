@@ -1,6 +1,9 @@
 *{
     margin:0;
     padding:0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 550;
+    font-style: normal;
 }
 
 .container {
@@ -47,10 +50,11 @@
     align-items: center;
 }
 .showcaseNameProduct{
+    font-family: Fulbo Argenta;
     display: grid;
     justify-content: center;
     align-items: center;
-    color:white;
+    color:black;
 }
 .usercard{
     color:white;
