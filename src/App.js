@@ -2,71 +2,58 @@ import React from "react"
 
 import Interface from "./Interface"
 
+import "./css/App.css"
+
 const App = () => {
     return (
         <div>
-            <table><tbody>
-            <tr>
-	            <td style={{
-	            		position: 'fixed', 
-	            		top: '20px',
-	            		left: '20px',
-	            	}}>
+        	<div className="container">
+        		<div className="item">
 					<Interface
 						index={0}
 					/>
-	            </td>
-	            <td style={{
-	            		position: 'fixed', 
-	            		top: '230px',
-	            		left: '20px',
-	            	}}>
+				</div>
+        		<div className="item">
 					<Interface
 						index={1}
 					/>
-	            </td>
-            </tr>
-            <tr>
-            	<td style={{
-	            		position: 'fixed', 
-	            		top: '440px',
-	            		left: '20px',	
-	            	}}>
+				</div>
+        		<div className="item">
 					<Interface
 						index={2}
 					/>
-            	</td>
-            	<td style={{
-	            		position: 'fixed', 
-	            		top: '20px',
-	            		left: '160px',
-	            	}}>
+				</div>
+        		<div className="item">
 					<Interface
 						index={3}
 					/>
-            	</td>
-            </tr>
-            <tr>
-            	<td style={{
-	            		position: 'fixed', 
-	            		top: '230px',
-	            		left: '160px',
-	            	}}>
+				</div>
+        		<div className="item">
 					<Interface
 						index={4}
 					/>
-            	</td>
-            	<td style={{
-	            		position: 'fixed', 
-	            		top: '440px',
-	            		left: '160px',
-	            	}}>
+				</div>
+        		<div className="item">
 					<Interface
 						index={5}
 					/>
-            	</td>
-            </tr>
-            </tbody></table>
+				</div>
+        		<div className="item">
+					<Interface
+						index={6}
+					/>
+				</div>
+        		<div className="item">
+					<Interface
+						index={7}
+					/>
+				</div>
+        		<div className="item">
+					<Interface
+						index={8}
+					/>
+				</div>
+			</div>
         </div>
     );
 }

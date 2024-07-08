@@ -15,8 +15,6 @@ function getStyles(name){
 		cursor: 'pointer',
 		overflow: 'hidden',
 		fontFamily: 'Helvetica',
-		margin:'0',
-		padding:'0',
 		fontWeight: 'bolder',
 		userSelect: 'none',
 		WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)',

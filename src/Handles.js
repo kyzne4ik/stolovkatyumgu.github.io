@@ -2,9 +2,11 @@ import { useContext } from "react"
 
 import { MyContext } from './MyContext';
 
+//import tg from "./tgApp/tgApp.js"
+
 import cart from "./cart"
 
-const basket = new cart()
+export const basket = new cart()
 
 function addProduct(event){
 	const id = event.target.className
@@ -76,6 +78,12 @@ const Handles = () => {
         magicEditor(id,textButton,'+',setTextButton)
 
         animationCountProduct(id,controls,name)
+        // if (basket.getAllObjects().length>0){ //если кнопка показана 
+        //     tg.MainButton.show() //показываем 
+        // }
+        // else{
+        //     tg.MainButton.hide() //скрываем кнопку 
+        // }
     };
 
     const handleButtonClickRemove = (event) => {
@@ -92,10 +100,18 @@ const Handles = () => {
         }
 
         animationCountProduct(id,controls,name)
+        // if (basket.getAllObjects().length>0){ //если кнопка показана 
+        //     tg.MainButton.show() //показываем 
+        // }
+        // else{
+        //     tg.MainButton.hide() //скрываем кнопку 
+        // }
+
     };
     return {
     	handleButtonClick,
     	handleButtonClickRemove,
+        basket,
     }
 }
 

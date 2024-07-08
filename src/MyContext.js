@@ -4,11 +4,14 @@ import { useAnimation } from 'framer-motion';
 export const MyContext = createContext();// контекст для состояний
 
 export const MyProvider = ({ children }) => {
-	const [showElement, setShowElement] = useState(Array.from({ length: 6 }).fill(false));
-	const [countProduct, setCountProduct] = useState(Array.from({ length: 6 }).fill(0));
-	const [clicked, setClicked] = useState(Array.from({ length: 6 }).fill(false));
-	const [textButton, setTextButton] = useState(Array.from({ length: 6 }).fill('ADD'));
+	const [showElement, setShowElement] = useState(Array.from({ length: 9 }).fill(false));
+	const [countProduct, setCountProduct] = useState(Array.from({ length: 9 }).fill(0));
+	const [clicked, setClicked] = useState(Array.from({ length: 9 }).fill(false));
+	const [textButton, setTextButton] = useState(Array.from({ length: 9 }).fill('ADD'));
 	const controls = [
+		useAnimation(),
+		useAnimation(),
+		useAnimation(),
 		useAnimation(),
 		useAnimation(),
 		useAnimation(),

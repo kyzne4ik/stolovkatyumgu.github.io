@@ -20,14 +20,14 @@ const getAnimateExit = () => ({
 
 export const AnimateComponent = ({index}) => {
 	const {
-			controls, 
+			controls,
 			countProduct,
 			showElement,
 	} = useContext(MyContext);
 
   return (
     <div>
-    	<div>
+    	<div style={{marginLeft: '84px',}}>
     		<AnimatePresence>
     		{showElement[index] && 
 	          <motion.div
@@ -49,8 +49,6 @@ export const AnimateComponent = ({index}) => {
 					lineHeight: '25px',
 					textAlign: 'center',
 					color: 'white',
-					marginLeft: '94px',
-					top: '-16px',
 					fontFamily: 'Helvetica',
 					fontWeight: '900',
 					}}

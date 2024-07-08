@@ -42,6 +42,9 @@ class cart{
 			console.log(this.list[i])
 		}
 	}
+	getAllObjects(){
+		return this.list;
+	}
 }
 
 export default cart;
